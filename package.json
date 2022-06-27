@@ -1,0 +1,26 @@
+{
+  "name": "tf-raizen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "serve -s src/",
+    "deploy": "gh-pages -d src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/la4ri/TF-RAIZEN.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/la4ri/TF-RAIZEN/issues"
+  },
+  "homepage": "https://github.com/la4ri/TF-RAIZEN#readme",
+  "devDependencies": {
+    "gh-pages": "^4.0.0",
+    "serve": "^13.0.2"
+  },
+  "keywords": []
+}
