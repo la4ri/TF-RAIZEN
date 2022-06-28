@@ -1,0 +1,79 @@
+@import url(var.css);
+
+*{
+    border:0;
+    margin:0;
+    padding:0;
+    box-sizing:0;
+}
+
+body{
+    width:100%;
+    height:100%;
+    font-size:1.5rem;
+    font-family: var(--fontRaizen);
+}
+
+.header{
+    background-color: var(--purpleRaizen);
+    width:100%;
+    height:30%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logoRaizen{
+    width: auto;
+    height:15vh;
+}
+
+.sair{
+    width:7%;
+    height:100%;
+    background: var(--purpleRaizen);
+    color: white;
+    display:flex;
+    align-items:center;
+    font-size:1.5rem;
+    gap:1%;
+}
+
+.navegation{
+    width:100%;
+    height:20%;
+    background: var(--blueRaizen);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    color: var(--purpleRaizen);
+    font-weight: bolder;
+    text-align:center;
+    padding-top: 1%;
+}
+
+.inputNavegation{
+    margin-right:1%;
+    height:2rem;
+    width: 20rem;
+    padding:1%;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+.hello{
+    margin-left: 2%;
+}
+
+.menuNavegation{
+    width:100%;
+    margin-top: 1%;
+    border-top: solid 1px var(--purpleRaizen);
+    list-style:none;
+    display:inline-flex;
+    justify-content: space-between;
+    padding: 1% 2%;
+    font-size: 2rem;
+}
+
