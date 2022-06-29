@@ -1,6 +1,6 @@
 export default () => {
-  const container = document.createElement("div");
-  container.classList.add('containerMain');
+    const container = document.createElement("div");
+    container.classList.add('containerMain');
 
   const template = `
   <section class="sectionCard cardMagenta">
@@ -25,7 +25,7 @@ export default () => {
   </section>
   `;
 
-  container.innerHTML = template;
+    container.innerHTML = template;
 
-  return container;
+    return container;
 }

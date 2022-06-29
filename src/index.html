@@ -16,6 +16,8 @@
         <ul class="listHeader">
             <li class="itensHeader hiUser">
                 <p class="hello">Olá, Akemi!</p>
+                <input type="text" id="searchType" onekeyup="searchCards()" name="search"
+                    placeholder="O que você busca?" class="inputNavegation" />
             </li>
             <li class="itensHeader searchHeader">
                 <img class="iconSearch" src="./image/icone-lupa.svg">
@@ -28,13 +30,14 @@
         </ul>
     </header>
     <nav class="navegation">
+
         <ul class="menuNavegation">
             <li class="itemNavegation"><a href="/#">Gestão Pessoal</a></li>
             <li class="itemNavegation"><a href="/#financeiro">Financeiro</a></li>
             <li class="itemNavegation"><a href="/#educacional">Educacional</a></li>
             <li class="itemNavegation"><a href="/#servicos">Serviços</a></li>
         </ul>
-        <button class="btnModoEscuroOn"> MODO ESCURO 
+        <button class="btnModoEscuroOn"> MODO ESCURO
             <img class="iconOn" alt="botão modo escuro" src="./image/modo-escuro-off.svg">
             <img class="iconOff off" alt="botão desativar modo escuro" src="./image/modo-escuro-on.svg">
         </button>
