@@ -1,10 +1,10 @@
 export default () => {
-  const container = document.createElement("div");
-  container.classList.add('containerMain');
+    const container = document.createElement("div");
+    container.classList.add('containerMain');
 
-  const template = `
+    const template = `
   <section class="sectionCard">
-      <img class="iconCard" src="../../image/controleDePonto.svg"/>
+      <img class="iconCard" src="./image/controleDePonto.svg"/>
       <button class="btncard">Controle de Ponto</button>
   </section>
   <section class="sectionCard">
@@ -25,7 +25,7 @@ export default () => {
   </section>
   `;
 
-  container.innerHTML = template;
+    container.innerHTML = template;
 
-  return container;
+    return container;
 }
