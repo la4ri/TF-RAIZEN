@@ -5,27 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./css/index.css">
     <title>PORTAL RH RAÍZEN</title>
 </head>
 
-<body>
-    <header class="header">
-        <img class="logoRaizen" alt="logoRaizen" src="./image/Logo_Raizen_RGB_White.png">
-        <button class="sair">Sair<img class="imageOut" src="./image/sair.svg"></button>
+<body class="body">
+    <header class="header borderHeaderBlack">
+        <img class="logoRaizen" alt="logoRaizen" src="./image/LOGO_RAIZEN_RGB.png">
+        <img class="logoRaizenBranco off" alt="logo Raizen" src="./image/Logo_Raizen_RGB_White.png">
+        <ul class="listHeader">
+            <li class="itensHeader hiUser">
+                <p class="hello">Olá, Akemi!</p>
+            </li>
+            <li class="itensHeader searchHeader">
+                <img class="iconSearch" src="./image/icone-lupa.svg">
+                <button class="search">BUSCAR </button>
+            </li>
+            <li class="itensHeader logOutHeader">
+                <img class="imageOut" src="./image/icone-sair.svg">
+                <button class="sair">SAIR</button>
+            </li>
+        </ul>
     </header>
     <nav class="navegation">
-        <p class="hello">Olá, Akemi!</p>
-        <input type="search" placeholder="O que você busca?" class="inputNavegation"/>
         <ul class="menuNavegation">
             <li class="itemNavegation"><a href="/#">Gestão Pessoal</a></li>
             <li class="itemNavegation"><a href="/#financeiro">Financeiro</a></li>
             <li class="itemNavegation"><a href="/#educacional">Educacional</a></li>
             <li class="itemNavegation"><a href="/#servicos">Serviços</a></li>
         </ul>
+        <button class="btnModoEscuroOn"> MODO ESCURO 
+            <img class="iconOn" alt="botão modo escuro" src="./image/modo-escuro-off.svg">
+            <img class="iconOff off" alt="botão desativar modo escuro" src="./image/modo-escuro-on.svg">
+        </button>
     </nav>
     <main id="root" class="main">
-
     </main>
     <script src="index.js" type="module"></script>
 </body>

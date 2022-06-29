@@ -1,5 +1,6 @@
 @import url(var.css);
 
+
 *{
     border:0;
     margin:0;
@@ -7,51 +8,91 @@
     box-sizing:0;
 }
 
-body{
+.body{
     width:100%;
     height:100%;
     font-size:1.5rem;
     font-family: var(--fontRaizen);
 }
 
+.bodyescuro{
+    background-color: black;
+}
+
 .header{
-    background-color: var(--purpleRaizen);
     width:100%;
-    height:30%;
+    height:20%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom: 1px solid var(--fontColor);
+}
+
+.logoRaizen, .logoRaizenBranco{
+    width: auto;
+    height:12vh;
+}
+
+.listHeader{
+    height:100%;
+    width: 25%;
+    list-style:none;
     display:flex;
     justify-content:space-between;
     align-items:center;
 }
 
-.logoRaizen{
-    width: auto;
-    height:15vh;
+.itensHeader{
+    width: 33%;
+    height:100%;
 }
 
-.sair{
-    width:7%;
-    height:100%;
-    background: var(--purpleRaizen);
-    color: white;
+.hiUser{
+    margin:auto;
+    color: var(--fontColor)
+}
+
+.searchHeader, .logOutHeader{
+    height:50%;
     display:flex;
-    align-items:center;
-    font-size:1.5rem;
-    gap:1%;
-    cursor:pointer;
+    flex-direction:column;
+    gap: 1rem;
+    border-left: 1px solid var(--fontColor);
+}
+
+.iconSearch,.imageOut{
+    width: 30%;
+    height:auto;
+    margin:auto;
+}
+
+.search, .sair{
+    color: var(--fontColor);
+    background-color: transparent;
+    font-size: 1rem;
+    font-family:var(--fontRaizen);
 }
 
 .navegation{
     width:100%;
     height:20%;
-    background: var(--blueRaizen);
     display:flex;
-    align-items:center;
     justify-content:space-between;
-    flex-wrap: wrap;
-    color: var(--purpleRaizen);
-    font-weight: bolder;
-    text-align:center;
-    padding-top: 1%;
+}
+
+.btnModoEscuroOn{
+    width:15%;
+    display:inline-flex;
+    align-items:center;
+    justify-content:space-evenly;
+    background:transparent;
+    font-family: var(--fontRaizen);
+    color: var(--fontColor);
+    font-size: 1rem;
+}
+
+.off{
+    display:none;
 }
 
 .inputNavegation{
@@ -70,18 +111,19 @@ body{
 .menuNavegation{
     width:100%;
     margin-top: 1%;
-    border-top: solid 1px var(--purpleRaizen);
     list-style:none;
     display:inline-flex;
     flex-wrap:wrap;
-    justify-content: space-between;
+    gap: 3%;
     padding: 1% 2%;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 a{
     text-decoration:none;
-    color: var(--purpleRaizen);
+    color: var(--fontColor);
+    font-family: var(--fontRaizen);
+    font-weight:none;
     cursor: pointer;
 }
 
@@ -107,19 +149,30 @@ a{
 .sectionCard{
     width: 400px;
     height: 300px;
-    background-color: var(--purpleRaizen);
     display:flex;
     flex-direction: column;
     align-items:center;
     justify-content:space-between;
     padding-top: 2%;
-    box-shadow: 1px 4px 5px var(--purpleRaizen);
     margin-bottom: 2%;
     cursor:pointer;
 }
 
 .cardSingle{
     margin-left: 2%;
+    background-color: var(--magentaRaizen);
+}
+
+.cardRoxo{
+    background-color: var(--purpleRaizen);
+}
+
+.cardAzul{
+    background-color: var(--blueRaizen)
+}
+
+.cardMagenta{
+    background-color: var(--magentaRaizen);
 }
 
 .iconCard{
@@ -130,10 +183,10 @@ a{
 .btncard{
     width: 100%;
     height: 30%;
-    background: var(--blueRaizen);
-    color: var(--purpleRaizen);
+    background: var(--lightGrayRaizen);
+    color: black;
+    font-family: var(--fontRaizen);
     font-size: 1.5rem;
     font-weight:bolder;
-    border: 2px solid var(--purpleRaizen);
     cursor:pointer;
 }

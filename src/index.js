@@ -40,3 +40,25 @@ window.addEventListener("load", () => {
   redirect();
 })
 
+const darkMode = document.querySelector('.btnModoEscuroOn')
+
+darkMode.addEventListener('click', () =>{
+  const darkModeOn = document.querySelector('.iconOn');
+  const darkModeOff = document.querySelector('.iconOff');
+  const body = document.querySelector('.body');
+  const logoRaizen = document.querySelector('.logoRaizen');
+  const logoRaizenBranco = document.querySelector('.logoRaizenBranco')
+  darkModeOn.classList.toggle('off');
+  darkModeOff.classList.toggle('off');
+  logoRaizen.classList.toggle('off');
+  logoRaizenBranco.classList.toggle('off');
+
+  if(darkModeOn.classList.contains('off')){
+    body.classList.add('bodyescuro')
+    document.body.style.setProperty('--fontColor' , 'white')
+  }else{
+    body.classList.remove('bodyescuro')
+    document.body.style.setProperty('--fontColor' , 'black')
+  }
+})
+

@@ -2,5 +2,16 @@
     --purpleRaizen: #781E77;
     --blueRaizen: #B4EDF5;
     --grayRaizen: #666666;
-    --fontRaizen: 'Tahoma';
+    --laranjaRaizen: #F47920;
+    --magentaRaizen: #EA368E;
+    --amareloRaizen: #FDB515;
+    --lightGrayRaizen: #E9ECEF;
+    --fontColor: black;
+    --fontRaizen: 'DINPro';
+}
+
+
+@font-face {
+    font-family: DINPro;
+    src: url(../DIN/DINPro-Regular_13937.ttf);
 }
