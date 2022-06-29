@@ -8,19 +8,19 @@ export default () => {
       <button class="btncard">Controle de Ponto</button>
   </section>
   <section class="sectionCard">
-      <img class="iconCard" src="../../image/estruturaOrganizacional.svg"/>
+      <img class="iconCard" src="./image/estruturaOrganizacional.svg"/>
       <button class="btncard">Estrutura Organizacional</button>
   </section>
   <section class="sectionCard">
-      <img class="iconCard" src="../../image/holerite.svg"/>
+      <img class="iconCard" src="./image/holerite.svg"/>
       <button class="btncard">Holerite</button>
   </section>
   <section class="sectionCard">
-      <img class="iconCard" src="../../image/ferias.svg"/>
+      <img class="iconCard" src="./image/ferias.svg"/>
       <button class="btncard">Ferias</button>
   </section>
   <section class="sectionCard">
-      <img class="iconCard" src="../../image/desligamento.svg"/>
+      <img class="iconCard" src="./image/desligamento.svg"/>
       <button class="btncard">Portal de desligamento</button>
   </section>
   `;

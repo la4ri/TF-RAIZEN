@@ -4,7 +4,7 @@ export default () => {
 
   const template = `
   <section class="sectionCard cardSingle">
-      <img class="iconCard" src="../image/treinamento.svg"/>
+      <img class="iconCard" src="./image/treinamento.svg"/>
       <button class="btncard">Treinamentos</button>
   </section> `;
 
