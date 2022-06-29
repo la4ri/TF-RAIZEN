@@ -41,15 +41,18 @@ window.addEventListener("load", () => {
 
 var nomeCard = document.getElementById('searchType');
 
+
 function searchCards() {
   let find = nomeCard.value
-  console.log(find);
+  // console.log(find);
 
   find = find.toLowerCase();
   let classCard = document.getElementsByClassName('sectionCard');
-  console.log(classCard);
+  // console.log(classCard);
+
 
   for (let i = 0; i < classCard.length; i++) {
+    console.log(classCard[i].innerHTML)
     if (!classCard[i].innerHTML.toLowerCase().includes(find)) {
       classCard[i].style.display = "none";
     }

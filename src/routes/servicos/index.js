@@ -3,7 +3,7 @@ export default () => {
     container.classList.add('containerMain');
 
     const template = `
-  <section class="sectionCard>
+  <section class="sectionCard">
       <img class="iconCard" src="./image/reservaSalas.svg"/>
       <button class="btncard">Reserva de Salas</button>
   </section>
