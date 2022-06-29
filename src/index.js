@@ -7,7 +7,6 @@ import servicos from "./routes/servicos/index.js";
 const main = document.querySelector("#root");
 
 const init = () => {
-  window.addEventListener("hashchange", () => {
 
     main.innerHTML="";
 
@@ -27,11 +26,17 @@ const init = () => {
       default:
         main.appendChild(gestaoPessoal());
     }
-  })
 }
 
-window.addEventListener("load", () => {
-  main.appendChild(gestaoPessoal());
+const redirect = () =>{
+window.addEventListener("hashchange", () => {
+  main.innerHTML = "";
   init();
+});
+};
+
+window.addEventListener("load", () => {
+  init();
+  redirect();
 })
 

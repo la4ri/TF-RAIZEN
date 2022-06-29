@@ -37,6 +37,7 @@ body{
     align-items:center;
     font-size:1.5rem;
     gap:1%;
+    cursor:pointer;
 }
 
 .navegation{
@@ -72,8 +73,67 @@ body{
     border-top: solid 1px var(--purpleRaizen);
     list-style:none;
     display:inline-flex;
+    flex-wrap:wrap;
     justify-content: space-between;
     padding: 1% 2%;
     font-size: 2rem;
 }
 
+a{
+    text-decoration:none;
+    color: var(--purpleRaizen);
+    cursor: pointer;
+}
+
+.main{
+    width:100%;
+    height:auto;
+    padding-top: 2%;
+}
+
+.containerMain{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    width:100%;
+}
+
+.containerMainSingle{
+    display:flex;
+    flex-wrap:wrap;
+    width:100%;
+}
+
+.sectionCard{
+    width: 400px;
+    height: 300px;
+    background-color: var(--purpleRaizen);
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-between;
+    padding-top: 2%;
+    box-shadow: 1px 4px 5px var(--purpleRaizen);
+    margin-bottom: 2%;
+    cursor:pointer;
+}
+
+.cardSingle{
+    margin-left: 2%;
+}
+
+.iconCard{
+    width:auto;
+    height: 60%;
+}
+
+.btncard{
+    width: 100%;
+    height: 30%;
+    background: var(--blueRaizen);
+    color: var(--purpleRaizen);
+    font-size: 1.5rem;
+    font-weight:bolder;
+    border: 2px solid var(--purpleRaizen);
+    cursor:pointer;
+}
