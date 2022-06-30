@@ -65,6 +65,7 @@
     width: 30%;
     height:auto;
     margin:auto;
+    cursor: pointer;
 }
 
 .iconSearch svg, .imageOut svg{
