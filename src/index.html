@@ -5,28 +5,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./css/index.css">
     <title>PORTAL RH RAÍZEN</title>
 </head>
 
-<body>
-    <header class="header">
-        <img class="logoRaizen" alt="logoRaizen" src="./image/Logo_Raizen_RGB_White.png">
-        <button class="sair">Sair<img class="imageOut" src="./image/sair.svg"></button>
+<body class="body">
+    <header class="header borderHeaderBlack">
+        <img class="logoRaizen" alt="logoRaizen" src="./image/LOGO_RAIZEN_RGB.png">
+        <img class="logoRaizenBranco off" alt="logo Raizen" src="./image/Logo_Raizen_RGB_White.png">
+        <ul class="listHeader">
+            <li class="itensHeader hiUser">
+                <p class="hello">Olá, Débora!</p>
+            </li>
+            <li class="itensHeader searchHeader">
+                <div class="iconSearch">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
+                        <path
+                            d="M 20.5 6 C 12.509634 6 6 12.50964 6 20.5 C 6 28.49036 12.509634 35 20.5 35 C 23.956359 35 27.133709 33.779044 29.628906 31.75 L 39.439453 41.560547 A 1.50015 1.50015 0 1 0 41.560547 39.439453 L 31.75 29.628906 C 33.779044 27.133709 35 23.956357 35 20.5 C 35 12.50964 28.490366 6 20.5 6 z M 20.5 9 C 26.869047 9 32 14.130957 32 20.5 C 32 23.602612 30.776198 26.405717 28.791016 28.470703 A 1.50015 1.50015 0 0 0 28.470703 28.791016 C 26.405717 30.776199 23.602614 32 20.5 32 C 14.130953 32 9 26.869043 9 20.5 C 9 14.130957 14.130953 9 20.5 9 z" />
+                    </svg>
+                </div>
+                <button class="search">BUSCAR </button>
+            </li>
+            <li class="itensHeader logOutHeader">
+                <div class="imageOut">
+                    <?xml version="1.0" standalone="no"?>
+                    <!DOCTYPE svg
+                        PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="48px" height="48px"
+                        viewBox="0 0 96.000000 96.000000" preserveAspectRatio="xMidYMid meet">
+                        <metadata>
+                            Created by potrace 1.16, written by Peter Selinger 2001-2019
+                        </metadata>
+                        <g transform="translate(0.000000,96.000000) scale(0.100000,-0.100000)" stroke="none">
+                            <path
+                                d="M180 860 c-19 -19 -20 -33 -20 -380 0 -347 1 -361 20 -380 19 -19 33 -20 300 -20 345 0 320 -12 320 155 0 63 -3 115 -6 115 -3 0 -21 -12 -40 -26 -33 -26 -34 -29 -34 -95 l0 -69 -240 0 -240 0 0 320 0 320 240 0 240 0 0 -69 c0 -66 1 -69 34 -95 19 -14 37 -26 40 -26 3 0 6 52 6 115 0 167 25 155 -320 155 -267 0 -281 -1 -300 -20z" />
+                            <path
+                                d="M640 575 l0 -55 -100 0 -100 0 0 -40 0 -40 100 0 100 0 0 -55 c0 -30 2 -55 5 -55 10 0 195 142 195 150 0 8 -185 150 -195 150 -3 0 -5 -25 -5 -55z" />
+                        </g>
+                    </svg>
+                </div>
+                <button class="sair">SAIR</button>
+            </li>
+        </ul>
+        <nav class="navbar">
+            <div class="navbar-container container">
+                <input type="checkbox" name="" id="">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <ul class="menu-items">
+                    <li><a class="routesHamburger" href="#">Gestão Pessoal</a></li>
+                    <li><a class="routesHamburger" href="#financeiro">Financeiro</a></li>
+                    <li><a class="routesHamburger" href="#educacional">Educacional</a></li>
+                    <li><a class="routesHamburger" href="#servicos">Serviços</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    <nav class="navegation">
-        <p class="hello">Olá, Akemi!</p>
+    <nav class="seachInput off">
         <input type="text" id="searchType" onekeyup="searchCards()" name="search" placeholder="O que você busca?"
             class="inputNavegation" />
+    </nav>
+    <nav class="navegation">
+        <nav class="seachInput serachInputMobile">
+            <input type="text" onekeyup="searchCards()" name="search" placeholder="O que você busca?"
+                class="inputNavegation" id="searchTypeMobile"/>
+        </nav>
         <ul class="menuNavegation">
-            <li class="itemNavegation"><a href="/#">Gestão Pessoal</a></li>
-            <li class="itemNavegation"><a href="/#financeiro">Financeiro</a></li>
-            <li class="itemNavegation"><a href="/#educacional">Educacional</a></li>
-            <li class="itemNavegation"><a href="/#servicos">Serviços</a></li>
+            <li class="itemNavegation"><a class="routes pageMain" href="#">Gestão Pessoal</a></li>
+            <li class="itemNavegation"><a class="routes pageFinanceiro" href="#financeiro">Financeiro</a></li>
+            <li class="itemNavegation"><a class="routes pageEducacional" href="#educacional">Educacional</a></li>
+            <li class="itemNavegation"><a class="routes pageServicos" href="#servicos">Serviços</a></li>
         </ul>
+        <button class="btnModoEscuroOn"> MODO ESCURO
+            <img class="iconOn" alt="botão modo escuro" src="./image/modo-escuro-off.svg">
+            <img class="iconOff off" alt="botão desativar modo escuro" src="./image/modo-escuro-on.svg">
+        </button>
     </nav>
     <main id="root" class="main">
-
     </main>
     <script src="index.js" type="module"></script>
 </body>

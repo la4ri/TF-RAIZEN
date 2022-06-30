@@ -1,5 +1,6 @@
 @import url(var.css);
 
+
 *{
     border:0;
     margin:0;
@@ -7,82 +8,151 @@
     box-sizing:0;
 }
 
-body{
+.body{
     width:100%;
     height:100%;
     font-size:1.5rem;
     font-family: var(--fontRaizen);
+    font-weight: 300;
+}
+
+.bodyescuro{
+    background-color: #343A40;
 }
 
 .header{
-    background-color: var(--purpleRaizen);
     width:100%;
-    height:30%;
+    height:20%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom: 1px solid var(--fontColor);
+}
+
+.logoRaizen, .logoRaizenBranco{
+    width: auto;
+    height:12vh;
+}
+
+.listHeader{
+    height:100%;
+    width: 25%;
+    list-style:none;
     display:flex;
     justify-content:space-between;
     align-items:center;
 }
 
-.logoRaizen{
-    width: auto;
-    height:15vh;
+.itensHeader{
+    width: 33%;
+    height:100%;
 }
 
-.sair{
-    width:7%;
-    height:100%;
-    background: var(--purpleRaizen);
-    color: white;
+.hiUser{
+    margin:auto;
+    color: var(--fontColor)
+}
+
+.searchHeader, .logOutHeader{
+    height:50%;
+    display:flex;
+    flex-direction:column;
+    gap: 1rem;
+    border-left: 1px solid var(--fontColor);
+}
+
+.iconSearch,.imageOut{
+    width: 30%;
+    height:auto;
+    margin:auto;
+}
+
+.iconSearch svg, .imageOut svg{
+    fill: var(--svgFill);
+}
+
+.search, .sair{
+    color: var(--fontColor);
+    background-color: transparent;
+    font-size: 1rem;
+    font-family:var(--fontRaizen);
+    font-weight: 300;
+}
+
+.navbar{
+    display:none;
+}
+
+.seachInput{
+    width:100%;
     display:flex;
     align-items:center;
-    font-size:1.5rem;
-    gap:1%;
-    cursor:pointer;
+    justify-cotent: flex-end;
 }
 
 .navegation{
     width:100%;
     height:20%;
-    background: var(--blueRaizen);
     display:flex;
-    align-items:center;
     justify-content:space-between;
-    flex-wrap: wrap;
-    color: var(--purpleRaizen);
-    font-weight: bolder;
-    text-align:center;
-    padding-top: 1%;
+}
+
+.serachInputMobile{
+    display:none;
+}
+
+.btnModoEscuroOn{
+    width:15%;
+    display:inline-flex;
+    align-items:center;
+    justify-content:space-evenly;
+    background:transparent;
+    font-family: var(--fontRaizen);
+    font-weight: 300;
+    color: var(--fontColor);
+    font-size: 1rem;
+}
+
+.off{
+    display:none;
 }
 
 .inputNavegation{
-    margin-right:1%;
-    height:2rem;
+    margin: 1%  2% 0 auto;
+    height:1rem;
     width: 20rem;
     padding:1%;
-    font-size: 1.5rem;
-    border-radius: 5px;
+    font-size: 1rem;
+    border-radius: 2px;
+    border: 1px solid var(--fontColor)
 }
 
 .hello{
     margin-left: 2%;
+    font-weight: 600;
 }
 
 .menuNavegation{
     width:100%;
     margin-top: 1%;
-    border-top: solid 1px var(--purpleRaizen);
     list-style:none;
     display:inline-flex;
     flex-wrap:wrap;
-    justify-content: space-between;
+    gap: 3%;
     padding: 1% 2%;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
-a{
+.routes{
     text-decoration:none;
-    color: var(--purpleRaizen);
+    color: var(--fontColor);
+    font-family: var(--fontRaizen);
+    font-weight: 300;
     cursor: pointer;
+}
+
+.bolder{
+    font-weight: 600;
 }
 
 .main{
@@ -107,19 +177,30 @@ a{
 .sectionCard{
     width: 400px;
     height: 300px;
-    background-color: var(--purpleRaizen);
     display:flex;
     flex-direction: column;
     align-items:center;
     justify-content:space-between;
     padding-top: 2%;
-    box-shadow: 1px 4px 5px var(--purpleRaizen);
     margin-bottom: 2%;
     cursor:pointer;
 }
 
 .cardSingle{
     margin-left: 2%;
+    background-color: var(--magentaRaizen);
+}
+
+.cardRoxo{
+    background-color: var(--purpleRaizen);
+}
+
+.cardAzul{
+    background-color: var(--blueRaizen)
+}
+
+.cardMagenta{
+    background-color: var(--magentaRaizen);
 }
 
 .iconCard{
@@ -130,10 +211,170 @@ a{
 .btncard{
     width: 100%;
     height: 30%;
-    background: var(--blueRaizen);
-    color: var(--purpleRaizen);
+    background: var(--lightGrayRaizen);
+    color: black;
+    font-family: var(--fontRaizen);
+    font-weight: 600;
     font-size: 1.5rem;
-    font-weight:bolder;
-    border: 2px solid var(--purpleRaizen);
     cursor:pointer;
+}
+
+@media (max-width: 940px){
+
+    .itensHeader{
+        display:none;
+    }
+    .navbar {
+        opacity: 0.95;
+        display:block;
+      }
+    
+      .navbar-container input[type="checkbox"],
+      .navbar-container .hamburger-lines {
+        display: block;
+      }
+    
+      .navbar-container {
+        display: block;
+        position: relative;
+        height: 64px;
+      }
+    
+      .navbar-container input[type="checkbox"] {
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 30px;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        opacity: 0;
+      }
+    
+      .navbar-container .hamburger-lines {
+        display: block;
+        height: 23px;
+        width: 35px;
+        position: absolute;
+        top: 17px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    
+      .navbar-container .hamburger-lines .line {
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: var(--fontColor);
+      }
+    
+      .navbar-container .hamburger-lines .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+      }
+    
+      .navbar-container .hamburger-lines .line2 {
+        transition: transform 0.2s ease-in-out;
+      }
+    
+      .navbar-container .hamburger-lines .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+      }
+    
+      .navbar .menu-items {
+        padding-top: 100px;
+        background: #fff;
+        height: 100vh;
+        max-width: 300px;
+        transform: translate(-3000%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -70px;
+        padding-left: 50px;
+        margin-right: 2%;
+        transition: transform 0.5s ease-in-out;
+        box-shadow: 5px 0px 10px 0px #aaa;
+      }
+    
+      .navbar .menu-items li {
+        margin-bottom: 1.5rem;
+        font-size: 1.3rem;
+        font-weight: 500;
+      }
+    
+      .logo {
+        position: absolute;
+        top: 5px;
+        right: 15px;
+        font-size: 2rem;
+      }
+    
+      .navbar-container input[type="checkbox"]:checked ~ .menu-items {
+        transform: translateX(0);
+      }
+    
+      .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+        transform: rotate(35deg);
+      }
+    
+      .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+        transform: scaleY(0);
+      }
+    
+      .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+        transform: rotate(-35deg);
+      }
+    
+      .routesHamburger{
+          text-decoration:none;
+          color:black;
+      }
+    
+      .food-container {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    
+      .food-type:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+    
+      .food-type {
+        box-shadow: 5px 5px 10px 0 #aaa;
+      }
+    
+      .img-container {
+        margin: 0;
+      }
+
+    .menuNavegation{
+        display:none;
+    }
+
+    .serachInputMobile{
+        display:block;
+        margin-left:2%;
+    }
+
+    .inputNavegation{
+        height:1rem;
+        width:60%;
+    }
+
+    .btnModoEscuroOn{
+        width:50%;
+        margin-left:auto;
+    }
+
+    .sectionCard{
+        width: 300px;
+        height:200px;
+        margin-bottom: 5%;
+    }
+
 }
