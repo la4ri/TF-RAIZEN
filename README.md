@@ -1,4 +1,5 @@
 # Talent Fest - Raízen
+
 ## Índice
 
 - [1. Introdução](#1-introdução)
@@ -6,41 +7,66 @@
 - [3. História de Usuário](#3-história-de-usuário)
 - [4. Interface](#4-interface)
 - [5. Aplicação](#5-aplicação)
-- [6. Implementações futuras](#6-implementações-futuras)
-- [7. Ferramentas utilizadas](#7-ferramentas-utilizadas)
-- [8. Desenvolvedoras](#8-desenvolvedoras)
+- [6. Implementação futura](#6-implementação-futura)
+- [7. Desenvolvedoras](#7-desenvolvedoras)
 
 ### 1. Introdução
+
  <div align= "center">
     <img alt="logo Raízen" src="./src/img-readme/logo.png" width="500px">
   </div>
   <br>
 
 ### 2. Resumo do projeto
-Projeto desenvolvido durante o Talent Fest, Hackathon de 3 dias do Bootcamp da Laboratória. 
+
+Projeto desenvolvido durante o Talent Fest, Hackathon de 3 dias do Bootcamp da Laboratória.
+
 #### 2.1 Desafio
-A Ráizen nos prospos fazer alterações no layout do Portal de RH, projetando uma melhor acessibilidade para portadores de baixa visão. O objetivo é padronizar e reduzir as burocracias dos processos de Administração de Recursos Humanos. 
+
+A Ráizen nos prospos fazer alterações no layout do Portal de RH, projetando uma melhor acessibilidade para portadores de baixa visão. O objetivo é padronizar e reduzir as burocracias dos processos de Administração de Recursos Humanos.
 O portal centraliza e facilita o acesso e a atualização das informações pessoais e profissionais do colaborador, além de trazer serviços e informações.
 
 A acessibilidade digital tem como principal objetivo facilitar e otimizar o acesso de pessoas com deficiência aos ambientes virtuais, eliminando as barreiras encontradas na web. Por meio dessa prática, é possível utilizar, participar e interagir com autonomia em sites e serviços disponíveis na internet.
 
 Dessa forma, promover a acessibilidade digital é, consequentemente, garantir as condições favoráveis para que todas as pessoas, com ou sem deficiência, possam participar do processo de forma justa.
 
-### 3 História de Usuário 
--- Descrever uma persona e os desafios que ela encontra ao acessar o portal e identificar os pontos de melhorias. --
+### 3 História de Usuário
+
+Colaborador Raízen - portador de baixa visão:
+
+_"Eu como portadora de baixa visão, necessito de uma aplicação com bom contraste e tamanho de fonte legível, a aplicação terá que ter um layout orgânico que atenda a todos os tipos de acessibilidade e que seja responsivo para os diversos tamanhos de tela."_
+
 ### 4. Interface
+
+#### 4.1 Portal Atual
+
+  <img alt="portal RH Raízen" src="./src/img-readme/portal-rh.png" width="500px">
+
+#### 4.2 Novo Layout
+
 Para o protótipo de alta fidelidade foi utilizada a ferramenta Figma.
-Começamos o planejamento estudando e analisando como distribuir o layout, e que ele fosse de fácil navegação e iteração do usuário. 
-Foi estruturado alguns modelos com padronagem de cores e análisado em plataforma que simulam contrastes de cores para portadores de baixa visão e daltonismo e após os feedbacks da equipe de apoio foi aprovado o seguinte protótipo:
+Começamos o planejamento estudando e analisando como distribuir o layout, e que ele fosse de fácil navegação e iteração do usuário.
+Foi estruturado alguns modelos com padronagem de cores e análisado em plataforma que simulam contrastes de cores para portadores de baixa visão e daltonismo e após os feedbacks da equipe de apoio e colaborador da Raízen com portador de baixa visão foi aprovado o protótipo.
 
-COLOCAR IMAGEM DO PROTÓTIPO DE ALTA FIDELIDADE
-### 5. Aplicação
-COLOCAR GIF DA APLICAÇÃO RODANDO
-### 6. Implementações futuras
-DESCREVER O BOTÃO DE FAVORITAS O CONTEÚDO MAIS UTILIZADO PARA O COLABORADOR
-### 7. Ferramentas utilizadas
+<div align= "center">
 
-### 8. Densenvolvido por:
+_Desktop_
+<img alt="protótipo desktop" src="./src/img-readme/desktop-app.gif" width="800px">
+
+_Mobile_
+
+  <img alt="mobile" src="./src/img-readme/mobile-app.gif" width="250px">
+</div>
+
+### 6. Implementação futura
+
+Deixamos em aberto para uma futura implemtanção para o portal do RH da Raízen a página com os acessos favoritos ou mais acessados pelo colaborador, a fim de simplificar o processo da busca de ferramentas dentro do portal.
+
+  <div align="center">
+    <img alt="protótipo" src="./src/img-readme/ImplementaçãoFutura.png" width="700px">
+  </div>
+
+### 7. Densenvolvido por:
 ---
 <table>
 <td>
