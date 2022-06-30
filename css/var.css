@@ -1,0 +1,25 @@
+:root{
+    --purpleRaizen: #781E77;
+    --blueRaizen: #1FC0DA;
+    --grayRaizen: #666666;
+    --laranjaRaizen: #F47920;
+    --magentaRaizen: #EA368E;
+    --amareloRaizen: #FDB515;
+    --lightGrayRaizen: #E9ECEF;
+    --fontColor: black;
+    --fontRaizen: 'DINPro';
+    --svgFill: #781E77;
+}
+
+
+@font-face {
+    font-family: DINPro;
+    font-weight: 300;
+    src: url(../DIN/DINPro-Regular_13937.ttf);
+}
+
+@font-face {
+    font-family: DINPro;
+    font-weight: 600;
+    src: url(../DIN/DINPro-Bold_13934.ttf);
+}
