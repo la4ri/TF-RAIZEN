@@ -40,7 +40,7 @@ _"Eu como portadora de baixa visão, necessito de uma aplicação com bom contra
 
 #### 4.1 Portal Atual
 
-  <img alt="portal RH Raízen" src="./src/img-readme/portal-rh.png" width="500px">
+  <img alt="portal RH Raízen" src="./src/img-readme/portal-rh.png" width="800px">
 
 #### 4.2 Novo Layout
 
